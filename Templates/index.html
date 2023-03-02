@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Urdu to Braille Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/static/logo.jpeg" alt="Ned Logo" style="width:10%">
+      <b><span style="margin-left: 24%;">Urdu to Braille Translator</span></b>
+      <img src="/static/ida.jpg" alt="Ida Rieu" class="ida" style="width: 10%; float: right;">
+      <div class="wrapper">
+        <form class="area" action="/translated" method="POST">
+        <div class="text-input">
+            <textarea spellcheck="false" class="from-text" placeholder="Enter text" name="urdu"></textarea>
+            <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation" name="braille"></textarea>
+          </div>
+          <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <!-- <i id="from" class="fas fa-volume-up"></i> -->
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <!-- <select></select> -->
+          </li>
+          <!-- <li class="exchange"><i class="fas fa-exchange-alt"></i></li> -->
+          <li class="row to">
+            <!-- <select></select> -->
+            <div class="icons">
+              <!-- <i id="to" class="fas fa-volume-up"></i> -->
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- <button>Translate Text</button> -->
+      <input type="submit" value="Translate text" name="action1"/>
+    </form>
+    
+    </div>
+
+
+  </body>
+</html>
